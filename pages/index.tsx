@@ -5,7 +5,6 @@ import { categories, Category } from "../data";
 import Menu from "../components/Menu";
 import MenuCategory from "../components/MenuCategory";
 
-import styles from "../styles/Home.module.css";
 import Swiper from "../components/Swiper";
 
 export async function getStaticProps() {

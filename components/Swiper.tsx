@@ -1,4 +1,3 @@
-import Image from "next/image";
 import { Category } from "../data";
 
 import styles from "../styles/Swiper.module.css";
