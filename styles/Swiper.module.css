@@ -1,0 +1,51 @@
+.container {
+  overflow-x: scroll;
+  width: 100%;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.container::-webkit-scrollbar {
+  display: none;
+}
+
+.cardContainer {
+  display: flex;
+  width: fit-content;
+  margin-top: 4vw;
+  margin-bottom: 4vw;
+  margin-left: 4vw;
+}
+
+.card {
+  padding-right: 4vw;
+  position: relative;
+}
+
+.categoryName {
+  position: absolute;
+  bottom: 4vw;
+  left: 4vw;
+  color: white;
+  z-index: 10;
+}
+
+.gradientOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 199.98px;
+  width: 141.52px;
+  background: linear-gradient(
+    rgba(18, 18, 18, 0),
+    rgba(18, 18, 18, 0),
+    rgba(18, 18, 18, 0.4)
+  );
+}
+
+.cardImg {
+  height: 199.98px;
+  width: 141.52px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

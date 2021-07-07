@@ -14,7 +14,7 @@ export const categories: Category[] = [
       { name: "Men", quantity: 25 },
       { name: "Women", quantity: 25 },
     ],
-    backgroundImg: "hi",
+    backgroundImg: "/Daily_Merino_Socks_Women_Silver_Grey_-_White__1_.webp",
   },
   {
     name: "Sports",
@@ -35,7 +35,7 @@ export const categories: Category[] = [
       { name: "KWF", quantity: 25 },
       { name: "Skiing", quantity: 25 },
     ],
-    backgroundImg: "hello",
+    backgroundImg: "/Sports_Socks_Mannen_DONKERBLAUW___GEEL.webp",
   },
   {
     name: "Travel",
@@ -46,7 +46,7 @@ export const categories: Category[] = [
       },
       { name: "Women", quantity: 25 },
     ],
-    backgroundImg: "bye",
+    backgroundImg: "/Travel_Socks_Mannen_DONKERBLAUW__1_.webp",
   },
-  { name: "Medical", subCategories: [], backgroundImg: "" },
+  { name: "Medical", subCategories: [], backgroundImg: "/8.webp" },
 ];

@@ -3,9 +3,10 @@ import Head from "next/head";
 
 import { categories, Category } from "../data";
 import Menu from "../components/Menu";
+import MenuCategory from "../components/MenuCategory";
 
 import styles from "../styles/Home.module.css";
-import MenuCategory from "../components/MenuCategory";
+import Swiper from "../components/Swiper";
 
 export async function getStaticProps() {
   return {
@@ -15,6 +16,8 @@ export async function getStaticProps() {
 
 export default function Home({ categories }: { categories: Category[] }) {
   const [expanded, setExpanded] = useState<boolean>(false);
+
+  const featuredCategories = categories.filter((cat) => cat.backgroundImg);
 
   return (
     <div>
@@ -27,10 +30,14 @@ export default function Home({ categories }: { categories: Category[] }) {
         <link rel="icon" href="/favicon.png" />
       </Head>
       <Menu expanded={expanded} setExpanded={setExpanded} />
-      {expanded &&
-        categories.map((category, i) => (
-          <MenuCategory key={i} category={category} />
-        ))}
+      {expanded && (
+        <div>
+          <Swiper categories={featuredCategories} />
+          {categories.map((category, i) => (
+            <MenuCategory key={i} category={category} />
+          ))}
+        </div>
+      )}
     </div>
   );
 }
