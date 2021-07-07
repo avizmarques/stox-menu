@@ -1,0 +1,13 @@
+.hamburger {
+  height: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-right: 18px;
+}
+
+.hamburgerLine {
+  width: 22.5px;
+  height: 1.875px;
+  background-color: black;
+}
