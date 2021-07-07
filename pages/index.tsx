@@ -1,13 +1,13 @@
+import { useState } from "react";
 import Head from "next/head";
-import CartIcon from "../components/CartIcon";
 
-import Hamburger from "../components/Hamburger";
-import Logo from "../components/Logo";
-import SearchIcon from "../components/SearchIcon";
+import Menu from "../components/Menu";
 
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
+  const [expanded, setExpanded] = useState<boolean>(false);
+
   return (
     <div>
       <Head>
@@ -18,22 +18,8 @@ export default function Home() {
         />
         <link rel="icon" href="/favicon.png" />
       </Head>
-      <div className={styles.menu}>
-        <div className={styles.menuLeft}>
-          <Hamburger />
-          <div className={styles.logoContainer}>
-            <Logo />
-          </div>
-        </div>
-        <div className={styles.menuRight}>
-          <div className={styles.iconContainer}>
-            <SearchIcon />
-          </div>
-          <div className={styles.iconContainer}>
-            <CartIcon />
-          </div>
-        </div>
-      </div>
+      <Menu expanded={expanded} setExpanded={setExpanded} />
+      {expanded && <div>hello!</div>}
     </div>
   );
 }

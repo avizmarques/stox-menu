@@ -1,0 +1,20 @@
+.container {
+  width: 22.5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line {
+  width: 1.875px;
+  height: 22.5px;
+  background-color: black;
+}
+
+.left {
+  transform: rotate(45deg);
+}
+
+.right {
+  transform: rotate(90deg);
+}

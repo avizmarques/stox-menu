@@ -1,0 +1,41 @@
+.menu {
+  width: 100%;
+  padding: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(229, 229, 229);
+}
+
+.menuLeft {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuRight {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.logoContainer {
+  height: 100%;
+  width: 140px;
+  display: flex;
+  align-items: center;
+}
+
+.iconContainer {
+  height: 22px;
+  width: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 18px;
+}
+
+.button {
+  background-color: transparent;
+  border: none;
+  height: 25px;
+}
