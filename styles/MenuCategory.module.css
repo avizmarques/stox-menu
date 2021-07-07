@@ -1,7 +1,6 @@
 .container {
   padding: 6vw 12vw;
   border-top: 1px solid rgb(229, 229, 229);
-  border-bottom: 1px solid rgb(229, 229, 229);
   display: flex;
   align-items: center;
   justify-content: space-between;
